@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e40fe23b11.js" crossorigin="anonymous"></script>
+    
+
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,24 +24,33 @@
         </nav>
     </div>
     <div id="header">
-        <div>
-        <h1>Are you starving?</h1>
-        <p>Within a few clicks, find meals that are accessible near you</p> 
-        <div>
-            <div>
-               <div id="deldiv"><i class="fa-solid fa-motorcycle fa-2xl" style="color:#F17228;  margin-right: 10px;"></i> <b style="color: #F17228; font-size: 15px;">Delivery</b> </div> 
-               <div id="pickupdiv"><i class="fa-solid fa-basket-shopping fa-2xl" style="color: #757575; margin-right: 10px;"></i><b style="color: #757575; font-size: 15px;">Pickup</b></div> 
+        
+        <div id="deliveryclassdiv" class="col-12 col-lg-8">
+        <h1 id="text1">Are you starving?</h1>
+        <p id="text2">Within a few clicks, find meals that are accessible near you</p> 
+        <div id="headerdiv" >
+            
+            <div id="maindeliverydiv">
+               <button id="deldiv" class="col-5 col-md-5" onclick="Delivery(this)"><i class="fa-solid fa-motorcycle fa-2xl" style="  margin-right: 10px;"></i> <b style=" font-size: 15px;">Delivery</b> </button> 
+               <button id="pickupdiv" class="col-5 col-md-5" onclick="Delivery(this)"><i class="fa-solid fa-basket-shopping fa-2xl"; margin-right: 10px;"></i><b style="font-size: 15px;">Pickup</b></button>
+               
+               
             </div>
-            <div id="searchmaindiv">
-            <div id="searchDiv">
+            <hr style="width: 100%; color: rgba(128, 128, 128, 0.301);">
+        
+            <div id="searchmaindiv" class="row">
+            <div id="searchDiv" class="col-12 col-md-10">
                 <div><i class="fa-sharp fa-solid fa-location-dot fa-2xl" style="color: #ff0000; margin-left: 5px; margin-right: 5px;"></i></div>
-                <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;">
+                <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;" >
             </div>
-            <div>
+            <div class="col-12 col-md-2" style="display: flex; justify-content: center;">
                 <button id="findfood"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff; margin-right: 10px;" ></i> <b style="font-size: 16px; color: white;">Find Food</b></button>
             </div>
         
         </div>
+    </div>
+    </div>
+    <img src="ramani.png" alt="" class="col-0 col-lg-4" id="ramani">
     </div>
     
     

@@ -43,31 +43,47 @@
 #deldiv{
     border-radius: 5px;
     background-color: #f1722843;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
-    padding-top: 3px;
-    padding-bottom: auto;
+    color: #F17228;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    
+    
 
 }
 #pickupdiv{
     
-        border-radius: 5px;
-        
-        height: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: inline-block;
-        padding-top: 3px;
+    border-radius: 5px;
+    background-color: white;
+    color: #757575;
     
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    border:none
+    
+
 }
 
 #searchDiv{
     display: flex;
-     width: 400px;
+     width: 70%;
     background-color: #f5f5f5;
-    height: 30px;
+    height: 50px;
     align-items: center;
     border-radius: 5px;
 }
@@ -76,11 +92,15 @@
     outline: none; 
     background-color: #f5f5f5;
     border: none;
-    width: 380px;
+    width: 100%;
+    height: 50px;
 }
 #searchmaindiv{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #findfood{
     border: none;
@@ -88,6 +108,113 @@
     width: auto;
     padding-left: 20px;
     padding-right: 20px;
-    height: 40px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-image: linear-gradient(to right, #FF7A7A , #F65900);
+    
+}
+#headerdiv{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+#header{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,202,11,255);
+    display: flex;
+    padding-top: 100px;
+    
+}
+
+#maindeliverydiv{
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#text1{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+margin-bottom: 20px;
+color: white;
+}
+#text2{
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 120%;
+margin-bottom: 30px;
+}
+#deliveryclassdiv{
+    margin-top: -55px;
+
+}
+@media only screen and (max-width: 992px) {
+    #ramani{
+        display: none;
+    }
+    #headerdiv{
+        width: 100%
+    }
+    #header{
+        height: 500px;
+    }
+    #deliveryclassdiv{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 250px;
+        
+       
+        
+        
+        
+    }
+    #findfood{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: auto;
+    }
+    #searchmaindiv{
+        width: 100%;
+        align-items: center;
+    }
+    #search{
+        width: 90%;
+    }
+    #searchDiv{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    #searchmaindiv{
+        justify-content: center;
+    }
+    #text1{
+        margin-top: 100px;
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width: 768px){
+    #header{
+        height: 530px;
+        
+        
+    }
+    #text1{
+        font-size: 60px;
+        margin-top: 150px;
+    }
+
 }
