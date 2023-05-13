@@ -1,3 +1,8 @@
+class Food{
+    constructor(name,){
+
+    }
+}
 // function Locator(){
 //     return document.getElementById("search").value
 // }

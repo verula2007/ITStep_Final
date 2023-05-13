@@ -18,8 +18,8 @@
         <div class="col-12 col-md-3 col-lg-3" style="display: flex; align-items: center; justify-content: center;"><img src="Logo.png" alt="" ></div>
         <p style="text-align: center;" class="col-12 col-md-5 col-lg-5"><b  style="width: 83px;height: 18px;text-align: center; font-size: 16px;">Deliver To:</b><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffb30e; margin-left: 10px; margin-right: 5px;"></i> <span style="font-size: 17px;">Current Location <b style="font-size: 17px;">Mohammadpur Bus Stand, Dhaka</b></span></p>
         <div id="navdiv" class="col-12 col-md-4 col-lg-4 center-block">
-            <button id="button1"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffb30e;padding-left: 5px; "></i> <b style="font-size: 16px; padding-right: 5px;">Search Food</b></button>
-            <button id="button2"><i class="fa-solid fa-user fa-2xl" style="color: #FFB800;"></i> <span style=" font-size: 16px;">Login</span></button>
+            <button id="button1"><i class="fa-solid fa-magnifying-glass fa-2xl" id="icon1"></i> <b style="font-size: 16px; padding-right: 5px; color: black\;">Search Food</b></button>
+            <button id="button2"><i class="fa-solid fa-user fa-2xl" style="color: #FFB800;" id="icon2"></i> <span style=" font-size: 16px;">Login</span></button>
             
         </nav>
     </div>
@@ -30,9 +30,9 @@
         <p id="text2">Within a few clicks, find meals that are accessible near you</p> 
         <div id="headerdiv" >
             
-            <div id="maindeliverydiv">
-               <button id="deldiv" class="col-5 col-md-5" onclick="Delivery(this)"><i class="fa-solid fa-motorcycle fa-2xl" style="  margin-right: 10px;"></i> <b style=" font-size: 15px;">Delivery</b> </button> 
-               <button id="pickupdiv" class="col-5 col-md-5" onclick="Delivery(this)"><i class="fa-solid fa-basket-shopping fa-2xl"; margin-right: 10px;"></i><b style="font-size: 15px;">Pickup</b></button>
+            <div id="maindeliverydiv" class="row">
+               <button id="deldiv" class="col-12 col-sm-5" onclick="Delivery(this)"><i class="fa-solid fa-motorcycle fa-2xl" style="  margin-right: 10px;"></i> <b style=" font-size: 15px;">Delivery</b> </button> 
+               <button id="pickupdiv" class="col-12 col-sm-5" onclick="Delivery(this)"><i class="fa-solid fa-basket-shopping fa-2xl"; style="margin-right: 10px;"></i><b style="font-size: 15px;">Pickup</b></button>
                
                
             </div>
@@ -44,7 +44,7 @@
                 <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;" >
             </div>
             <div class="col-12 col-md-2" style="display: flex; justify-content: center;">
-                <button id="findfood"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff; margin-right: 10px;" ></i> <b style="font-size: 16px; color: white;">Find Food</b></button>
+                <button id="findfood"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff; margin-right: 10px;" id="findfoodicon" ></i> <b style="font-size: 16px; color: white;">Find Food</b></button>
             </div>
         
         </div>
@@ -53,7 +53,16 @@
     <img src="ramani.png" alt="" class="col-0 col-lg-4" id="ramani">
     </div>
     
-    
+    <div id="food">
+    <div class="col-12 col-sm-6 col-md-3 fooddiv1">
+            <img style="border-radius: 20px; width: 90%;" src="Image (1).png" alt="">
+        <div class="nameandremaining">
+            <p class="name1">Greys Vage</p>
+            <div class="remaining">6 Days Remaining</div>
+        </div>
+    </div>
+
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

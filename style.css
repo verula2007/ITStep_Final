@@ -32,13 +32,14 @@
     margin-right: 10px; 
     margin-left: 20px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px
 }
 #button1{
     height: 40px; 
     padding: 0; 
     border: none; 
     background: none;
+    border-radius: 5px;
 }
 #deldiv{
     border-radius: 5px;
@@ -51,7 +52,7 @@
     padding-bottom: 10px;
     
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border: none;
     
@@ -72,10 +73,9 @@
     padding-bottom: 10px;
     
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border:none
-    
+    border: none;
 
 }
 
@@ -156,6 +156,72 @@ margin-bottom: 30px;
     margin-top: -55px;
 
 }
+
+#button1:hover{
+    background-color: #F17228;
+    
+    border-radius: 5px;
+}
+#button2:hover{
+    background-color: #F17228;
+    
+    
+}
+#icon1{
+    color: #ffb30e;
+    padding-left: 5px;
+}
+#findfood:hover i{
+    color:   #F65900 !important ;
+    
+}
+#findfood:hover b{
+    color: #F65900 !important;
+}
+#findfood:hover{
+    background-image:none;
+    background-color: white;
+    border: 1px solid #F65900 !important;
+
+}
+#pickupdiv:hover{
+    background-color: white;
+    border: 1px solid #F17228;
+    color: #F17228;
+}
+#pickupdiv:hover i{
+    color:#F17228 ;
+}
+.remaining{
+    color: #424242; 
+    font-weight: 700;
+    font-size: 22px; 
+    border-radius: 5px;
+    background-color: #f1722856; 
+    color: #F17228;
+    display: flex;
+    justify-content: center;
+}
+.name1{
+    color: #424242;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.fooddiv1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 430px;
+    
+}
+.nameandremaining{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 @media only screen and (max-width: 992px) {
     #ramani{
         display: none;
@@ -205,6 +271,13 @@ margin-bottom: 30px;
         margin-top: 100px;
         font-size: 70px;
     }
+    #deldiv{
+        width: 100%;
+        margin-left: 40px;
+    }
+    #pickupdiv{
+        margin-left: 40px;
+    }
 }
 @media only screen and (max-width: 768px){
     #header{
@@ -213,8 +286,11 @@ margin-bottom: 30px;
         
     }
     #text1{
-        font-size: 60px;
+        font-size: 40px;
         margin-top: 150px;
+    }
+    #text2{
+        font-size: 20px;
     }
 
 }
