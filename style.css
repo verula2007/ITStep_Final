@@ -209,11 +209,54 @@ margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
-.fooddiv1{
+#fooddiv1{
+    grid-column-start: 1;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 430px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    
+    
+    
+}
+#fooddiv2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    
+    
+    
+}
+#fooddiv3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    
+    
+}
+#fooddiv4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    
     
 }
 .nameandremaining{
@@ -221,6 +264,46 @@ margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.saleoff{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.sale{
+    display: flex;
+    
+    background-color: #FFB30E ;
+    justify-content: center;
+    width: 30%;
+    min-width: 90px;
+    position: absolute;   
+    bottom: 0;
+    left: 0; 
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+    
+.image1{
+    background-image: url(Image1.png);
+    height: 320px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+#food{
+    display: grid;
+    width: 90%;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 @media only screen and (max-width: 992px) {
     #ramani{
@@ -278,6 +361,26 @@ margin-bottom: 30px;
     #pickupdiv{
         margin-left: 40px;
     }
+    #sale p{
+        font-size: 20px !important;
+    }
+    #fooddiv1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #fooddiv2{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    #fooddiv3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #fooddiv4{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }          
+
 }
 @media only screen and (max-width: 768px){
     #header{
@@ -292,5 +395,33 @@ margin-bottom: 30px;
     #text2{
         font-size: 20px;
     }
-
+    #sale p{
+        font-size: 30px !important;
+    }
+    #fooddiv1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        max-width: 300px;
+        
+    }
+    #fooddiv2{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        max-width: 300px;
+    }
+    #fooddiv3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        max-width: 300px;
+    }
+    #fooddiv4{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        max-width: 300px;
+    }    
+}
+@media only screen and (max-width: 1300px){
+    .image1{
+        height: 250px;
+    }
 }
