@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+#logo{
+    cursor: pointer;
+}
 #navbar{
     width: 100%;
     min-height: 100px;
@@ -36,10 +39,21 @@
 }
 #button1{
     height: 40px; 
-    padding: 0; 
     border: none; 
     background: none;
     border-radius: 5px;
+    color: #424242;
+    font-size: 15px;
+    width: 80%;
+    
+}
+#navsearchdiv{
+    width:50% ;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    
+    
 }
 #deldiv{
     border-radius: 5px;
@@ -119,6 +133,7 @@
     height: auto;
     background-color: white;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 #header{
     width: 100%;
@@ -157,10 +172,8 @@ margin-bottom: 30px;
 
 }
 
-#button1:hover{
-    background-color: #F17228;
-    
-    border-radius: 5px;
+#button1:focus{
+    outline: none;
 }
 #button2:hover{
     background-color: #F17228;
@@ -181,12 +194,12 @@ margin-bottom: 30px;
 #findfood:hover{
     background-image:none;
     background-color: white;
-    border: 1px solid #F65900 !important;
+    box-shadow: 0px 0px 5px #F65900;
 
 }
 #pickupdiv:hover{
     background-color: white;
-    border: 1px solid #F17228;
+    box-shadow: 0px 0px 5px #F17228;
     color: #F17228;
 }
 #pickupdiv:hover i{
@@ -218,6 +231,7 @@ margin-bottom: 30px;
     height: auto;
     margin-top: 30px;
     margin-right: 50px;
+    width: 100%;
     
     
     
@@ -231,6 +245,7 @@ margin-bottom: 30px;
     height: auto;
     margin-top: 30px;
     margin-right: 50px;
+    width: 100%;
     
     
     
@@ -244,6 +259,7 @@ margin-bottom: 30px;
     height: auto;
     margin-top: 30px;
     margin-right: 50px;
+    width: 100%;
     
     
 }
@@ -256,6 +272,7 @@ margin-bottom: 30px;
     height: auto;
     margin-top: 30px;
     margin-right: 50px;
+    width: 100%;
     
     
 }
@@ -301,9 +318,159 @@ margin-bottom: 30px;
 #food{
     display: grid;
     width: 90%;
+    column-gap: 40px;
     
     margin-left: auto;
     margin-right: auto;
+    
+}
+.workicons{
+    width: 100%;
+    height: 250px;
+}
+.worktext1{
+    
+
+font-weight: 700;
+font-size: 22px;
+
+text-align: center;
+
+
+
+color: #434343;
+}
+.worktext2{
+    
+font-weight: 400;
+font-size: 18px;
+
+
+text-align: center;
+
+
+
+color: #9E9E9E;
+}
+#howdoesitwork{
+    display: grid;
+    width: 80%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: fixed;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    justify-content: center;
+    
+}
+#backgrounddiv{
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+#workheader{
+    font-style: normal;
+font-weight: 700;
+font-size: 43px;
+line-height: 112%;
+/* or 48px */
+
+text-align: center;
+
+color: #F17228;
+/* margin-top:  */
+}
+#workdiv1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 350px;
+}
+#workdiv2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 350px;
+}
+#workdiv3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 350px;
+}
+#workdiv4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 350px;
+    
+}
+#popularheader{
+    font-style: normal;
+font-weight: 700;
+font-size: 43px;
+line-height: 112%;
+/* or 48px */
+
+text-align: center;
+margin-top: 20px;
+
+/* Theme/Gray 900 */
+
+color: #212121;
+}
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+	padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
 }
 @media only screen and (max-width: 992px) {
     #ramani{
@@ -379,8 +546,23 @@ margin-bottom: 30px;
     #fooddiv4{
         grid-column-start: 3;
         grid-column-end: 5;
-    }          
-
+    }
+    #workdiv1{
+        grid-column-start: 1;
+        grid-column-end: 3;       
+    }
+    #workdiv2{
+        grid-column-start: 3;
+        grid-column-end: 5;       
+    }
+    #workdiv3{
+        grid-column-start: 1;
+        grid-column-end: 3;       
+    }
+    #workdiv4{
+        grid-column-start: 3;
+        grid-column-end: 5;       
+    }
 }
 @media only screen and (max-width: 768px){
     #header{
@@ -388,9 +570,13 @@ margin-bottom: 30px;
         
         
     }
+    #food{
+        justify-content: center;
+    }
     #text1{
         font-size: 40px;
         margin-top: 150px;
+        
     }
     #text2{
         font-size: 20px;
@@ -399,26 +585,45 @@ margin-bottom: 30px;
         font-size: 30px !important;
     }
     #fooddiv1{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        max-width: 300px;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        
+        
         
     }
     #fooddiv2{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        max-width: 300px;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        
+        
     }
     #fooddiv3{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        max-width: 300px;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        
+        
     }
     #fooddiv4{
+        grid-column-start: 1;
+        grid-column-end: 8;
+        
+    }
+    #workdiv1{
         grid-column-start: 2;
-        grid-column-end: 4;
-        max-width: 300px;
-    }    
+        grid-column-end: 4;       
+    }
+    #workdiv2{
+        grid-column-start: 2;
+        grid-column-end: 4;       
+    }
+    #workdiv3{
+        grid-column-start: 2;
+        grid-column-end: 4;       
+    }
+    #workdiv4{
+        grid-column-start: 2;
+        grid-column-end: 4;       
+    }
 }
 @media only screen and (max-width: 1300px){
     .image1{

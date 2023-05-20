@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e40fe23b11.js" crossorigin="anonymous"></script>
-    
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
 
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
@@ -15,11 +18,11 @@
 </head>
 <body>
     <nav id="navbar" class="row">
-        <div class="col-12 col-md-3 col-lg-3" style="display: flex; align-items: center; justify-content: center;"><img src="Logo.png" alt="" ></div>
-        <p style="text-align: center;" class="col-12 col-md-5 col-lg-5"><b  style="width: 83px;height: 18px;text-align: center; font-size: 16px;">Deliver To:</b><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffb30e; margin-left: 10px; margin-right: 5px;"></i> <span style="font-size: 17px;">Current Location <b style="font-size: 17px;">Mohammadpur Bus Stand, Dhaka</b></span></p>
-        <div id="navdiv" class="col-12 col-md-4 col-lg-4 center-block">
-            <button id="button1"><i class="fa-solid fa-magnifying-glass fa-2xl" id="icon1"></i> <b style="font-size: 16px; padding-right: 5px; color: black\;">Search Food</b></button>
-            <button id="button2"><i class="fa-solid fa-user fa-2xl" style="color: #FFB800;" id="icon2"></i> <span style=" font-size: 16px;">Login</span></button>
+        <div class="col-12 col-md-3 col-lg-3" style="display: flex; align-items: center; justify-content: center;"><img src="Logo.png" alt="" id="logo" ></div>
+        <p style="text-align: center;" class="col-12 col-md-5 col-lg-6"><b  style="width: 83px;height: 18px;text-align: center; font-size: 16px;">Deliver To:</b><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffb30e; margin-left: 10px; margin-right: 5px;"></i> <span style="font-size: 17px;">Current Location <b style="font-size: 17px;">Mohammadpur Bus Stand, Dhaka</b></span></p>
+        <div id="navdiv" class="col-12 col-md-4 col-lg-3 center-block">
+            <div id="navsearchdiv"><i class="fa-solid fa-magnifying-glass fa-2xl" id="icon1"></i><input id="button1" type="text" placeholder="Search Food"></div>
+            <button id="button2" onclick="signIn()"><i class="fa-solid fa-user fa-2xl" style="color: #FFB800;" id="icon2"></i> <span style=" font-size: 16px;">Login</span></button>
             
         </nav>
     </div>
@@ -41,7 +44,7 @@
             <div id="searchmaindiv" class="row">
             <div id="searchDiv" class="col-12 col-md-10">
                 <div><i class="fa-sharp fa-solid fa-location-dot fa-2xl" style="color: #ff0000; margin-left: 5px; margin-right: 5px;"></i></div>
-                <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;" >
+                <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;" onclick="locationFunction()" >
             </div>
             <div class="col-12 col-md-2" style="display: flex; justify-content: center;">
                 <button id="findfood"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff; margin-right: 10px;" id="findfoodicon" ></i> <b style="font-size: 16px; color: white;">Find Food</b></button>
@@ -116,16 +119,48 @@
 </div>
 
     </div>
+    <div id="backgrounddiv">
+    <h1 id="workheader">How does it work</h1>
     <div id="howdoesitwork">
-        <div id="fooddiv1">
-            <img style="font-size:wid" src="icon1.png" alt="">
-            <h2><b style="color: #434343;">Select location</b></h2>
+        <div id="workdiv1">
+            <img src="icon1.png" alt="" class="workicons">
+            <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
+            <h2 style="text-align: center;"><b class="worktext1">Select location</b></h2>
+            <p class="worktext2">Choose the location where your food will be delivered.</p>
         </div>
+        </div>
+        <div id="workdiv2">
+            <img src="icon2.png" alt="" class="workicons">
+            <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
+            <h2 style="text-align: center;"><b class="worktext1">Choose order</b></h2>
+            <p class="worktext2">Check over hundreds of menus to pick your favorite food</p>
+        </div>
+        </div>
+        <div id="workdiv3">
+            <img src="icon3.png" alt="" class="workicons">
+            <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
+            <h2 style="text-align: center;"><b class="worktext1">Pay advanced</b></h2>
+            <p class="worktext2">It's quick, safe, and simple. Select several methods of payment</p>
+        </div>
+        </div>
+        <div id="workdiv4">
+            <img src="icon4.png" alt="" class="workicons">
+            <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
+            <h2 style="text-align: center;"><b class="worktext1">Enjoy meals</b></h2>
+            <p class="worktext2">Food is made and delivered directly to your home.</p>
+        </div>
+        </div>
+
    
 
 </div>
+</div>
+<div id="popularitems">
+    <h1 id="popularheader">Popular items</h1>
+</div>
 
-    </div>
+
+    
     <script src="main.js"></script>
 </body>
 </html>

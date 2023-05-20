@@ -1,13 +1,22 @@
-class Food{
-    constructor(name,){
-
-    }
-}
-// function Locator(){
-//     return document.getElementById("search").value
+// class Food{
+//     constructor(name,img,price,restaurant,){
+//         this.Name=name
+//         this.Img=img
+//         this.Price=price
+//         this.restaurant=restaurant
+//     }
 // }
-// let location = getLocation()
-// console.log(location)
+// let location = ""
+// function locationFunction(){
+//     location = document.getElementById('search').value
+//     console.log(location)
+// }
+function signIn(){
+    location.href="login.html"
+}
+function Home(){
+    location.href="index.html"
+}
 document.getElementById("deldiv").disabled = true;
 function Delivery(i){
     let current = i
