@@ -21,6 +21,7 @@ $( document ).ready(function() {
     }
     
 })
+
 // class Food{
 //     constructor(name,img,price,restaurant,){
 //         this.Name=name
