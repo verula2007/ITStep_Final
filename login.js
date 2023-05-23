@@ -29,7 +29,7 @@ fetch('http://kketelauri-001-site1.gtempurl.com/api/user/login', {
    .then(response =>response.json())
    .then(response => {console.log(JSON.stringify(response))
 
-    localStorage.setItem(JSON.stringify(response).firstName, JSON.stringify(response))
+    localStorage.setItem("user", JSON.stringify(response))
     
     location.href="index.html"
 }).catch(error => {

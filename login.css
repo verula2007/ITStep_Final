@@ -17,7 +17,7 @@ html {
 }
 body{
     position:absolute; top:0; bottom:0; right:0; left:0;
-    background: linear-gradient(rgb(173, 0, 0),yellow) ;
+    background: linear-gradient(rgba(173, 0, 0, 0.795),rgba(255, 255, 0, 0.801)) ;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -57,7 +57,7 @@ h2 {
     position: absolute;
     top: 30%;
     left: 20%;
-    background: rgba(214, 132, 9, 0.699) ;
+    background: rgba(255, 255, 255, 0.418) ;
     width: 60%;
     margin-top: 50px;
     margin: auto auto;
@@ -149,7 +149,7 @@ h2 {
   }
   
   #create-account-wrap {
-    background-color: rgba(173, 0, 0, 0.699);
+    background-color: rgba(128, 128, 128, 0.411);
     color: #8a8b8e;
     font-size: 14px;
     width: 100%;

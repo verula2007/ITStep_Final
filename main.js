@@ -1,3 +1,26 @@
+$('#slidediv').css("display","none")
+$( document ).ready(function() {
+    if("user" in localStorage){
+    document.getElementById("icon2").nextElementSibling.style.display="none"
+    obj = JSON.parse(localStorage.getItem("user"))
+    document.getElementById("namep").innerHTML= obj.firstName
+    $("#button2").removeAttr('onclick').click(function () {
+        document.getElementById("button2").style.display = "none"
+        $('#slidediv').slideToggle();
+    });
+    $('#slidediv').click(function(){
+        $('#slidediv').slideToggle(1)
+        document.getElementById("button2").style.display = "flex"
+    })
+    $("#signout").click(function(){
+        localStorage.removeItem("user")
+        location.reload()
+    })
+    
+    
+    }
+    
+})
 // class Food{
 //     constructor(name,img,price,restaurant,){
 //         this.Name=name
@@ -6,11 +29,23 @@
 //         this.restaurant=restaurant
 //     }
 // }
-// let location = ""
-// function locationFunction(){
-//     location = document.getElementById('search').value
-//     console.log(location)
-// }
+
+function locationFunc(event){
+    event.preventDefault()
+    locat = document.getElementById('search').value
+    if(locat == ""){
+    document.getElementById("searchDiv").style.border = "1px solid red" 
+    document.getElementById("search").style.borderTop = "1px solid red" 
+    document.getElementById("search").style.borderBottom = "1px solid red" 
+    }
+    else{
+        document.getElementById("searchDiv").style.border = "none" 
+        document.getElementById("search").style.borderTop = "none" 
+        document.getElementById("search").style.borderBottom = "none"
+        localStorage.setItem("location",locat)
+        
+        }
+}
 function signIn(){
     location.href="login.html"
 }

@@ -26,8 +26,15 @@
         <p style="text-align: center;" class="col-12 col-md-5 col-lg-6"><b  style="width: 83px;height: 18px;text-align: center; font-size: 16px;">Deliver To:</b><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffb30e; margin-left: 10px; margin-right: 5px;"></i> <span style="font-size: 17px;">Current Location <b style="font-size: 17px;">Mohammadpur Bus Stand, Dhaka</b></span></p>
         <div id="navdiv" class="col-12 col-md-4 col-lg-3 center-block">
             <div id="navsearchdiv"><i class="fa-solid fa-magnifying-glass fa-2xl" id="icon1"></i><input id="button1" type="text" placeholder="Search Food"></div>
-            <button id="button2" onclick="signIn()"><i class="fa-solid fa-user fa-2xl" style="color: #FFB800;" id="icon2"></i> <span style=" font-size: 16px;">Login</span></button>
-            
+            <div id="logindiv">
+                <button id="button2" onclick="signIn()"><i class="fa-solid fa-user fa-2xl" style="color: #FFB800;" id="icon2"></i> <span style=" font-size: 16px;">Login</span></button>
+                <div id="slidediv">
+                    
+                    <p style="font-size: 16px; text-align: center; color: #ffb30e;">Hello,</p>
+                    <p style="font-size: 16px; text-align: center; color: #ffb30e;" id="namep"></p>
+                    <button id="signout">Sign Out</button>
+                </div>
+            </div>
         </nav>
     </div>
     <div id="header">
@@ -48,10 +55,10 @@
             <div id="searchmaindiv" class="row">
             <div id="searchDiv" class="col-12 col-md-10">
                 <div><i class="fa-sharp fa-solid fa-location-dot fa-2xl" style="color: #ff0000; margin-left: 5px; margin-right: 5px;"></i></div>
-                <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;" onclick="locationFunction()" >
+                <input type="text" name="search" id="search" placeholder="Enter Your Address" style="font-size: 15px;" >
             </div>
             <div class="col-12 col-md-2" style="display: flex; justify-content: center;">
-                <button id="findfood"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff; margin-right: 10px;" id="findfoodicon" ></i> <b style="font-size: 16px; color: white;">Find Food</b></button>
+                <button id="findfood" onclick="locationFunc(event)"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff; margin-right: 10px;" id="findfoodicon" ></i> <b style="font-size: 16px; color: white;">Find Food</b></button>
             </div>
         
         </div>
@@ -166,10 +173,18 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide" >
+        <div id="swipermain">
+        <div>staff</div>
+        <div>staff</div>
+        <div>staff</div>
+        <div>staff</div>
+        <div>staff</div>
+        </div>
+    </div>
       <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
+      
+      
     </div>
     
   
@@ -177,7 +192,7 @@
     <div class="swiper-button-prev swiperbutton"></div>
     <div class="swiper-button-next swiperbutton"></div>
   
-    
+    </div>
 
 
     
