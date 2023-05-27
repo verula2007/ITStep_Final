@@ -12,7 +12,7 @@ let registervalue = $("#login-form").serializeArray().reduce(function(a,x){
 },{})
 registervalue.active=true
 if(registervalue.userName && registervalue.firstName && registervalue.lastName && registervalue.email && registervalue.privateNumber && registervalue.password !=""){
-fetch('http://kketelauri-001-site1.gtempurl.com/api/user/adduser', {
+fetch('https://kketelauri-001-site1.gtempurl.com/api/user/adduser', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',

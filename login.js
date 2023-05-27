@@ -13,7 +13,7 @@ let loginvalue = $("#login-form").serializeArray().reduce(function(a,x){
 
 
 if(loginvalue.email && loginvalue.password !=""){
-fetch('http://kketelauri-001-site1.gtempurl.com/api/user/login', {
+fetch('https://kketelauri-001-site1.gtempurl.com/api/user/login', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',

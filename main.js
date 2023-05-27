@@ -1,3 +1,12 @@
+fetch('products.json').then(function(response){
+    let get1 = response.json() 
+
+    console.log(get1.JSONStringify())
+
+    localStorage.setItem("products",response.json())
+})
+
+document.getElementById(image1).style.backgroundImage = "url('"+ +"')"
 $('#slidediv').css("display","none")
 $( document ).ready(function() {
     if("user" in localStorage){
@@ -75,17 +84,100 @@ function Delivery(i){
         current.nextElementSibling.disabled=false
     }
 }
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
   
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
   
    
-  });
+//   });
+
+  obj1=[
+    {
+        title:"bla1",
+        days:5
+    },
+    {
+        title:"bla2",
+        days:5
+    },
+    {
+        title:"bla3",
+        days:5
+    },
+    {
+        title:"bla4",
+        days:5
+    },
+    {
+        title:"bla5",
+        days:5
+    },
+    {
+        title:"bla6",
+        days:5
+    },
+    {
+        title:"bla7",
+        days:5
+    },
+    {
+        title:"bla8",
+        days:5
+    },
+    {
+        title:"bla9",
+        days:5
+    },
+    {
+        title:"bla10",
+        days:5
+    }
+  ]
+
+
+caruselData=1  
+showData(caruselData)
+function showData(number) {
+    let newindex=0
+    let index1=0
+   for (let index = 0; index < 5; index++) {
+    index1=index+1
+    console.log(index1)
+    newindex=5*(number-1)+index
+    console.log(newindex)
+    console.log(obj1[newindex])
+    console.log(obj1)
+    document.getElementById("name1"+index1).innerHTML=obj1[newindex].title
+    document.getElementById("remaining"+index1).innerHTML=obj1[newindex].days
+    
+   }
+
+    
+}  
+
+function leftscrol()
+{
+    if(caruselData>1){
+        caruselData=caruselData-1
+        showData(caruselData)
+    }
+}
+
+
+function rightscrol(){
+    if(caruselData==1 || caruselData<obj.length/5){
+        caruselData=caruselData+1
+        console.log(caruselData)
+        showData(caruselData)
+    }
+}
+
+

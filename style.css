@@ -331,8 +331,38 @@ margin-bottom: 30px;
     border-top-right-radius: 20px;
 }
     
-.image1{
-    background-image: url(Image1.png);
+#image1{
+    
+    height: 320px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+#image2{
+    
+    height: 320px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+#image3{
+    
+    height: 320px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+#image4{
+    
     height: 320px;
     background-size: cover ;
     background-repeat: no-repeat;
@@ -631,4 +661,18 @@ color: #212121;
     .image1{
         height: 250px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+#flexDiv{
+    display: flex;
+    justify-content: space-evenly;
 }
