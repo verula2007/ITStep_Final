@@ -1,16 +1,68 @@
-[
-    {
+{"products":{
+    "greysvage":{
         "name": "Greys Vage",
         "logo": "",
         "productname1": "",
         "productname2": "",
         "productname3": "",
         "productname4": "",
-        "productimg1": "images/gretsvage1.png",
-        "productimg2": "images/gretsvage2.png",
-        "productimg3": "images/gretsvage3.png",
-        "productimg4": "images/gretsvage4.png",
-        "location": "sdwasdw"
+        "productimg1": "images/greysvage1.png",
+        "productimg2": "images/greysvage2.png",
+        "productimg3": "images/greysvage3.png",
+        "productimg4": "images/greysvage4.png",
+        "productprice1": "",
+        "productprice2": "",
+        "productprice3": "",
+        "productprice4": ""
+        
+
+        },
+    "burgerarena":{
+        "name": "Burger Arena",
+        "logo": "",
+        "productname1": "Cheese Burger",
+        "productimg1": "images/burgerarena1.png",
+        "productprice1": "$3.88"
+        
+
+    },
+    "topsticks":{
+        "name": "Top Sticks",
+        "logo": "",
+        "productname1": "Toffe's Cake",
+        "productimg1": "images/topsticks1.png",
+        "productprice1": "$4.00"
+        
+
+    },
+    "cakeworld":{
+        "name": "Cake World",
+        "logo": "",
+        "productname1": "Dancake",
+        "productimg1": "images/cakeworld1.png",
+        "productprice1": "$1.99"
+        
+
+    },
+    "fastfooddine":{
+        "name": "Fastfood Dine",
+        "logo": "",
+        "productname1": "Crispy Sandwitch",
+        "productimg1": "images/fastfooddine1.png",
+        "productprice1": "$3.00"
+        
+
+    },
+    "foodyman":{
+        "name": "Foody man",
+        "logo": "",
+        "productname1": "Thai Soup",
+        "productimg1": "images/foodyman1.png",
+        "productprice1": "$2.79"
+        
+
     }
     
-  ]
+    }}
+    
+  

@@ -24,7 +24,7 @@
 </head>
 <body>
     <nav id="navbar" class="row">
-        <div class="col-12 col-md-3 col-lg-3" style="display: flex; align-items: center; justify-content: center;"><img src="Logo.png" alt="" id="logo" ></div>
+        <div class="col-12 col-md-3 col-lg-3" style="display: flex; align-items: center; justify-content: center;"><img src="images/Logo.png" alt="" id="logo" ></div>
         <p style="text-align: center;" class="col-12 col-md-5 col-lg-6"><b  style="width: 83px;height: 18px;text-align: center; font-size: 16px;">Deliver To:</b><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffb30e; margin-left: 10px; margin-right: 5px;"></i> <span style="font-size: 17px;">Current Location <b style="font-size: 17px;">Mohammadpur Bus Stand, Dhaka</b></span></p>
         <div id="navdiv" class="col-12 col-md-4 col-lg-3 center-block">
             <div id="navsearchdiv"><i class="fa-solid fa-magnifying-glass fa-2xl" id="icon1"></i><input id="button1" type="text" placeholder="Search Food"></div>
@@ -66,7 +66,7 @@
         </div>
     </div>
     </div>
-    <img src="ramani.png" alt="" class="col-0 col-lg-4" id="ramani">
+    <img src="images/ramani.png" alt="" class="col-0 col-lg-4" id="ramani">
     </div>
     
     <div id="food">
@@ -117,7 +117,7 @@
 </div>
 </div>
 <div id="fooddiv4">
-    <div id="image4 ">
+    <div id="image4">
         <div class="sale">
             <p style="color: white; font-size: 50px;">20</p>
             <div class="saleoff">
@@ -137,28 +137,28 @@
     <h1 id="workheader">How does it work</h1>
     <div id="howdoesitwork">
         <div id="workdiv1">
-            <img src="icon1.png" alt="" class="workicons">
+            <img src="images/icon1.png" alt="" class="workicons">
             <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
             <h2 style="text-align: center;"><b class="worktext1">Select location</b></h2>
             <p class="worktext2">Choose the location where your food will be delivered.</p>
         </div>
         </div>
         <div id="workdiv2">
-            <img src="icon2.png" alt="" class="workicons">
+            <img src="images/icon2.png" alt="" class="workicons">
             <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
             <h2 style="text-align: center;"><b class="worktext1">Choose order</b></h2>
             <p class="worktext2">Check over hundreds of menus to pick your favorite food</p>
         </div>
         </div>
         <div id="workdiv3">
-            <img src="icon3.png" alt="" class="workicons">
+            <img src="images/icon3.png" alt="" class="workicons">
             <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
             <h2 style="text-align: center;"><b class="worktext1">Pay advanced</b></h2>
             <p class="worktext2">It's quick, safe, and simple. Select several methods of payment</p>
         </div>
         </div>
         <div id="workdiv4">
-            <img src="icon4.png" alt="" class="workicons">
+            <img src="images/icon4.png" alt="" class="workicons">
             <div style="height: 100px; width: auto; display: flex; flex-direction: column; justify-content: space-between;">
             <h2 style="text-align: center;"><b class="worktext1">Enjoy meals</b></h2>
             <p class="worktext2">Food is made and delivered directly to your home.</p>
@@ -170,98 +170,52 @@
 </div>
 </div>
 <div id="popularitems">
-    <h1 id="popularheader">Popular items</h1>
+    <h1 class="popularheader">Popular items</h1>
     <!-- https://codepen.io/ekeric13/pen/wKOwmg -->
       
     <div id="flexDiv">
-        <button onclick="leftscrol()">left</button>
-        <div id="maindiv3">
-            <div id="fooddiv1">
-                <div class="image1" >
-                    <div class="sale">
-                        <p style="color: white; font-size: 50px;">15</p>
-                        <div class="saleoff">
-                            <p style="color: white; font-size: 20px;">%</p>
-                            <p style="color:white; font-size: 20px; ">off</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="nameandremaining">
-                <p id="name11"></p>
-                <div id="remaining1">6 Days Remaining</div>
-                </div>
-                </div>
+        <button onclick="leftscrol()" class="caruselarrow" id="leftarrow"><</button>
+        <div id="caruseldiv1">
+            <img id="caruselimg1" src="" alt="" style="border-radius: 10px;">
+            <p id="caruselprod1" class="caruselprod" style="font-size: 20px; color: #424242;">  </p>
+            <div class="caruselloc"><i class="fa-solid fa-location-dot fa-xl" style="color: #ffb30e;  margin-right: 5px; margin-bottom: 5px;"></i><p id="caruselloc1" style="font-size: 15px; color: #FFB30E;"></p></div>
+            <b id="caruselprice1" class="caruselprice"></b>
+            <button class="caruselbutton" id="caruselbutton1">Order Now</button>
         </div>
-        <div id="maindiv3">
-            <div id="fooddiv1">
-                <div class="image1" >
-                    <div class="sale">
-                        <p style="color: white; font-size: 50px;">15</p>
-                        <div class="saleoff">
-                            <p style="color: white; font-size: 20px;">%</p>
-                            <p style="color:white; font-size: 20px; ">off</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="nameandremaining">
-                <p id="name12"></p>
-                <div id="remaining2">6 Days Remaining</div>
-                </div>
-                </div>
+        <div id="caruseldiv1">
+            <img id="caruselimg2"  src="" alt="" style="border-radius: 10px;">
+            <p id="caruselprod2" class="caruselprod" style="font-size: 20px; color: #424242;">  </p>
+            <div class="caruselloc"><i class="fa-solid fa-location-dot fa-xl" style="color: #ffb30e;  margin-right: 5px; margin-bottom: 5px;"></i><p id="caruselloc2" style="font-size: 15px; color: #FFB30E;"></p></div>
+            <b id="caruselprice2" class="caruselprice"></b>
+            <button class="caruselbutton" id="caruselbutton2">Order Now</button>
         </div>
-        <div id="maindiv3">
-            <div id="fooddiv1">
-                <div class="image1" >
-                    <div class="sale">
-                        <p style="color: white; font-size: 50px;">15</p>
-                        <div class="saleoff">
-                            <p style="color: white; font-size: 20px;">%</p>
-                            <p style="color:white; font-size: 20px; ">off</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="nameandremaining">
-                <p id="name13"></p>
-                <div id="remaining3">6 Days Remaining</div>
-                </div>
-                </div>
+        <div id="caruseldiv1">
+            <img id="caruselimg3"  src="" alt="" style="border-radius: 10px;">
+            <p id="caruselprod3" class="caruselprod" style="font-size: 20px; color: #424242;">  </p>
+            <div  class="caruselloc"><i class="fa-solid fa-location-dot fa-xl" style="color: #ffb30e;  margin-right: 5px; margin-bottom: 5px;"></i><p id="caruselloc3" style="font-size: 15px; color: #FFB30E;"></p></div>
+            <b id="caruselprice3" class="caruselprice"></b>
+            <button class="caruselbutton" id="caruselbutton3">Order Now</button>
         </div>
-        <div id="maindiv3">
-            <div id="fooddiv1">
-                <div id="image1" >
-                    <div class="sale">
-                        <p style="color: white; font-size: 50px;">15</p>
-                        <div class="saleoff">
-                            <p style="color: white; font-size: 20px;">%</p>
-                            <p style="color:white; font-size: 20px; ">off</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="nameandremaining">
-                <p id="name14"></p>
-                <div id="remaining4">6 Days Remaining</div>
-                </div>
-                </div>
+        <div id="caruseldiv1">
+            <img id="caruselimg4"  src="" alt="" style="border-radius: 10px;">
+            <p id="caruselprod4" class="caruselprod" style="font-size: 20px; color: #424242;">  </p>
+            <div class="caruselloc"><i class="fa-solid fa-location-dot fa-xl" style="color: #ffb30e;  margin-right: 5px; margin-bottom: 5px;"></i><p style="font-size: 15px; color: #FFB30E;" id="caruselloc4"></p></div>
+            <b id="caruselprice4" class="caruselprice"></b>
+            <button class="caruselbutton" id="caruselbutton4">Order Now</button>
         </div>
-        <div id="maindiv3">
-            <div id="fooddiv1">
-                <div class="image1" >
-                    <div class="sale">
-                        <p style="color: white; font-size: 50px;">15</p>
-                        <div class="saleoff">
-                            <p style="color: white; font-size: 20px;">%</p>
-                            <p style="color:white; font-size: 20px; ">off</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="nameandremaining">
-                <p id="name15"></p>
-                <div id="remaining5">6 Days Remaining</div>
-                </div>
-                </div>
+        <div id="caruseldiv1">
+            <img id="caruselimg5"  src="" alt="" style="border-radius: 10px;">
+            <p id="caruselprod5" class="caruselprod" style="font-size: 20px; color: #424242;">  </p>
+            <div class="caruselloc"><i class="fa-solid fa-location-dot fa-xl" style="color: #ffb30e;  margin-right: 5px; margin-bottom: 5px;"></i><p id="caruselloc5" style="font-size: 15px; color: #FFB30E;"></p></div>
+            <b id="caruselprice5" class="caruselprice"></b>
+            <button class="caruselbutton" id="caruselbutton5">Order Now</button>
         </div>
-        <button onclick="rightscrol()">right</button>
+        
+        <button onclick="rightscrol()" class="caruselarrow" id="rightarrow">></button>
     </div>
+</div>
+<div id="feautured">
+    <h1 class="popularheader">Featured Restaurants</h1>
 </div>
     
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

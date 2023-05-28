@@ -1,12 +1,14 @@
-fetch('products.json').then(function(response){
-    let get1 = response.json() 
-
-    console.log(get1.JSONStringify())
-
-    localStorage.setItem("products",response.json())
+$.getJSON("products.json",function(result){
+    let prod1 = JSON.stringify(result)
+    localStorage.setItem("products",prod1)
+    
 })
+let prod = JSON.parse(localStorage.getItem("products")).products
+document.getElementById("image1").style.backgroundImage = 'url(' + prod.greysvage.productimg1 +')'
+document.getElementById("image2").style.backgroundImage = 'url(' + prod.greysvage.productimg2 +')'
+document.getElementById("image3").style.backgroundImage = 'url(' + prod.greysvage.productimg3 +')'
+document.getElementById("image4").style.backgroundImage = 'url(' + prod.greysvage.productimg4 +')'
 
-document.getElementById(image1).style.backgroundImage = "url('"+ +"')"
 $('#slidediv').css("display","none")
 $( document ).ready(function() {
     if("user" in localStorage){
@@ -101,45 +103,35 @@ function Delivery(i){
 
   obj1=[
     {
-        title:"bla1",
-        days:5
+        img:prod.burgerarena.productimg1,
+        product:prod.burgerarena.productname1,
+        name:prod.burgerarena.name,
+        price:prod.burgerarena.productprice1
     },
     {
-        title:"bla2",
-        days:5
+        img:prod.topsticks.productimg1,
+        product:prod.topsticks.productname1,
+        name:prod.topsticks.name,
+        price:prod.topsticks.productprice1
     },
     {
-        title:"bla3",
-        days:5
+        img:prod.cakeworld.productimg1,
+        product:prod.cakeworld.productname1,
+        name:prod.cakeworld.name,
+        price:prod.cakeworld.productprice1
     },
     {
-        title:"bla4",
-        days:5
+        img:prod.fastfooddine.productimg1,
+        product:prod.fastfooddine.productname1,
+        name:prod.fastfooddine.name,
+        price:prod.fastfooddine.productprice1
     },
     {
-        title:"bla5",
-        days:5
+        img:prod.foodyman.productimg1,
+        product:prod.foodyman.productname1,
+        name:prod.foodyman.name,
+        price:prod.foodyman.productprice1
     },
-    {
-        title:"bla6",
-        days:5
-    },
-    {
-        title:"bla7",
-        days:5
-    },
-    {
-        title:"bla8",
-        days:5
-    },
-    {
-        title:"bla9",
-        days:5
-    },
-    {
-        title:"bla10",
-        days:5
-    }
   ]
 
 
@@ -150,18 +142,19 @@ function showData(number) {
     let index1=0
    for (let index = 0; index < 5; index++) {
     index1=index+1
-    console.log(index1)
+    
     newindex=5*(number-1)+index
-    console.log(newindex)
-    console.log(obj1[newindex])
-    console.log(obj1)
-    document.getElementById("name1"+index1).innerHTML=obj1[newindex].title
-    document.getElementById("remaining"+index1).innerHTML=obj1[newindex].days
+    
+    document.getElementById("caruselimg"+index1).src=obj1[newindex].img
+    document.getElementById("caruselprod"+index1).innerHTML=obj1[newindex].product
+    document.getElementById("caruselloc"+index1).innerHTML=obj1[newindex].name
+    document.getElementById("caruselprice"+index1).innerHTML=obj1[newindex].price
     
    }
 
     
 }  
+document.getElementById("leftarrow").disabled = true
 
 function leftscrol()
 {
@@ -169,14 +162,22 @@ function leftscrol()
         caruselData=caruselData-1
         showData(caruselData)
     }
+    else{
+        document.getElementById("leftarrow").disabled = true
+        document.getElementById("rightarrow").disabled = false
+    }
 }
 
 
 function rightscrol(){
-    if(caruselData==1 || caruselData<obj.length/5){
+    if(caruselData<obj1.length/5){
         caruselData=caruselData+1
-        console.log(caruselData)
+        
         showData(caruselData)
+    }
+    else{
+        document.getElementById("rightarrow").disabled = true
+        document.getElementById("leftarrow").disabled = false
     }
 }
 
