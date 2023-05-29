@@ -286,7 +286,7 @@ showData1(caruselData1)
 function showData1(number) {
     let newindex=0
     let index1=0
-   for (let index = 0; index < 6; index++) {
+   for (index = 0; index < 6; index++) {
     index1=index+1
     
     newindex=6*(number-1)+index
@@ -305,7 +305,7 @@ function leftscrol1()
 {
     if(caruselData1>1 ){
         caruselData1=caruselData1-1
-        showData1(caruselData)
+        showData1(caruselData1)
         document.getElementById("carusel2arrow2").disabled = false
     }
     else{
@@ -316,8 +316,8 @@ function leftscrol1()
 
 
 function rightscrol1(){
-    if(caruselData1<obj1.length/6){
-        caruselData=caruselData+1
+    if(caruselData1<obj2.length/6){
+        caruselData1=caruselData1+1
         
         showData1(caruselData1)
         document.getElementById("carusel2arrow1").disabled = false

@@ -1,4 +1,5 @@
 
+
 *{
     box-sizing: border-box;
 }
@@ -688,6 +689,38 @@ color: #212121;
 .viewallp:hover{
     color: #F65900 !important; 
 }
+.bestdealbutton{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footerimage{
+    background: url(images/footerimage.png);
+    display: flex; flex-direction: column;
+    justify-content: space-evenly;
+    height: 320px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    position: relative;
+}
+#footerimagebitton{
+    width: 250px; 
+    border: none; 
+    color: #FFFFFF; 
+    font-weight: bold; 
+    font-size: 20px; 
+    background-color: #F17228 ;
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 10px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+#footerimagebitton:hover{
+    color: #F17228;
+    background-color: white;
+}
 @media only screen and (max-width: 1500px) {
     #flexDiv{
         display: none;
@@ -877,6 +910,31 @@ color: #212121;
     #divfeautured{
         padding-bottom: 30px;
     }
+    #bigimage1{
+        display: none;
+    }
+    #bigimage2{
+        display: none;
+    }
+    .container5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text-container5 {
+        flex-basis: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .photo-container5 {
+        flex-basis: 50%;
+    }
+    .footer12{
+        display: none;
+    }
 
 }
 @media only screen and (max-width: 1300px){
@@ -888,5 +946,8 @@ color: #212121;
     }
     #carusel2div{
         display: none;
+    }
+    .bestdealimage{
+        height: 50%;
     }
 }
