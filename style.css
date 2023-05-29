@@ -550,6 +550,154 @@ color: #212121;
     color:white;
     background-color: #FAAA01;
 }
+#caruselimg1{
+    width: 284px;
+    height: 283px;
+}
+#caruselimg2{
+    width: 284px;
+    height: 283px;
+}
+#caruselimg3{
+    width: 284px;
+    height: 283px;
+}
+#caruselimg4{
+    width: 284px;
+    height: 283px;
+}
+#caruselimg5{
+    width: 284px;
+    height: 283px;
+}
+#feauturedrestaurants{
+    display: grid;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:5%;
+    
+    
+}
+#divfeautured{
+    padding-bottom: 200px;
+}
+.feauturedimage{
+    
+    height: 300px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+    
+    
+   
+}
+.feauturedrestaurant1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    
+}
+.feauturedsales{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+
+
+}
+.feauturedsale{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#F17228;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.speed{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFB30E;
+}
+.viewall{
+    color: white;
+    background-color: #FFBA26;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 18px;
+}
+.viewall:hover{
+    background-color: #F65900;
+    color: yellow;
+}
+#carusel2arrow1{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color:#FFB30E ;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+#carusel2arrow1:hover{
+    color: yellow ;
+    background-color: #F65900;
+}
+#carusel2arrow2{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color:#FFB30E ;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+#carusel2arrow2:hover{
+    color: yellow ;
+    background-color: #F65900;
+}
+.viewallp{
+    cursor: pointer;
+    
+}
+.viewallp:hover{
+    color: #F65900 !important; 
+}
+@media only screen and (max-width: 1500px) {
+    #flexDiv{
+        display: none;
+    }
+    #popularheader{
+        display: none;
+    }
+    
+
+}
 @media only screen and (max-width: 992px) {
     #ramani{
         display: none;
@@ -641,6 +789,17 @@ color: #212121;
         grid-column-start: 3;
         grid-column-end: 5;       
     }
+    #feauturedrestaurants{
+        grid-template-columns: auto auto;
+        
+    }
+    #feauturedrestaurant1{
+        height: 400px;
+    }
+    #divfeautured{
+        padding-bottom: 400px;
+    }
+    
 }
 @media only screen and (max-width: 768px){
     #header{
@@ -702,19 +861,32 @@ color: #212121;
         grid-column-start: 2;
         grid-column-end: 4;       
     }
+    #feauturedrestaurants{
+        grid-template-columns: auto ;
+
+    }
+    #feauturedrestaurants{
+        width: 50%;
+    }
+    .feauturedsales{
+        width: 100%;
+    }
+    .viewall{
+        margin-top: 1400px;
+    }
+    #divfeautured{
+        padding-bottom: 30px;
+    }
+
 }
 @media only screen and (max-width: 1300px){
     .image1{
         height: 250px;
     }
+    .feauturedimage{
+        height: 250px;
+    }
+    #carusel2div{
+        display: none;
+    }
 }
-
-
-
-
-
-
-
-
-
-

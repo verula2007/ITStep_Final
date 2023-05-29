@@ -10,10 +10,10 @@
         "productimg2": "images/greysvage2.png",
         "productimg3": "images/greysvage3.png",
         "productimg4": "images/greysvage4.png",
-        "productprice1": "",
-        "productprice2": "",
-        "productprice3": "",
-        "productprice4": ""
+        "productprice1": "$2.00",
+        "productprice2": "$2.25",
+        "productprice3": "$4.50",
+        "productprice4": "$1.90"
         
 
         },
@@ -61,7 +61,66 @@
         "productprice1": "$2.79"
         
 
+    },
+    "foodworld":{
+        "name": "Foodwold",
+        "logo": "images/foodworldlogo.png",
+        "productname1": "Soup",
+        "productimg1": "images/foodworld.png",
+        "productprice1": "$3.00"
+    },
+    "pizzahub":{
+        "name": "Pizzahub",
+        "logo": "images/pizzahublogo.png",
+        "productname1": "Tiramisu",
+        "productimg1": "images/pizzahub.png",
+        "productprice1": "$2.70"
+    },
+    "donutshut":{
+        "name": "Donuts hut",
+        "logo": "images/donutshutlogo.png",
+        "productname1": "Pancakes",
+        "productimg1": "images/donutshut.png",
+        "productprice1": "$4.10"
+    },
+    "subway":{
+        "name": "Subway",
+        "logo": "images/subwaylogo.png",
+        "productname1": "Donuts",
+        "productimg1": "images/subway.png",
+        "productprice1": "$1.00"
+    },
+    "rubytuesday":{
+        "name": "Ruby Tuesday",
+        "logo": "images/rubytuesdaylogo.png",
+        "productname1": "Steak",
+        "productimg1": "images/rubytuesday.png",
+        "productprice1": "$4.20"
+    },
+    "kfc":{
+        "name": "KFC",
+        "logo": "images/kfclogo.png",
+        "productname1": "Chicken",
+        "productimg1": "images/kfc.png",
+        "productprice1": "$2.70"
+    },
+    "redsquare":{
+        "name": "Red Square",
+        "logo": "images/redsquarelogo.png",
+        "productname1": "Spicy Soup",
+        "productimg1": "images/redsquare.png",
+        "productprice1": "$2.20"
+    },
+    "tacobell":{
+        "name": "Taco Bell",
+        "logo": "images/tacobelllogo.png",
+        "productname1": "Egg Soup",
+        "productimg1": "images/tacobell.png",
+        "productprice1": "$1.50"
     }
+    
+
+
     
     }}
     

@@ -86,20 +86,7 @@ function Delivery(i){
         current.nextElementSibling.disabled=false
     }
 }
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-  
-  
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-  
-   
-//   });
+
 
   obj1=[
     {
@@ -132,6 +119,38 @@ function Delivery(i){
         name:prod.foodyman.name,
         price:prod.foodyman.productprice1
     },
+    {
+        img:prod.pizzahub.productimg1,
+        product:prod.pizzahub.productname1,
+        name:prod.pizzahub.name,
+        price:prod.pizzahub.productprice1
+    },
+    {
+        img:prod.kfc.productimg1,
+        product:prod.kfc.productname1,
+        name:prod.kfc.name,
+        price:prod.kfc.productprice1
+    },
+    {
+        img:prod.tacobell.productimg1,
+        product:prod.tacobell.productname1,
+        name:prod.tacobell.name,
+        price:prod.tacobell.productprice1
+    },
+    {
+        img:prod.redsquare.productimg1,
+        product:prod.redsquare.productname1,
+        name:prod.redsquare.name,
+        price:prod.redsquare.productprice1
+    },
+    {
+        img:prod.subway.productimg1,
+        product:prod.subway.productname1,
+        name:prod.subway.name,
+        price:prod.subway.productprice1
+    },
+    
+    
   ]
 
 
@@ -158,9 +177,10 @@ document.getElementById("leftarrow").disabled = true
 
 function leftscrol()
 {
-    if(caruselData>1){
+    if(caruselData>1 ){
         caruselData=caruselData-1
         showData(caruselData)
+        document.getElementById("rightarrow").disabled = false
     }
     else{
         document.getElementById("leftarrow").disabled = true
@@ -174,6 +194,7 @@ function rightscrol(){
         caruselData=caruselData+1
         
         showData(caruselData)
+        document.getElementById("leftarrow").disabled = false
     }
     else{
         document.getElementById("rightarrow").disabled = true
@@ -181,4 +202,128 @@ function rightscrol(){
     }
 }
 
+document.getElementById("feauturedimage1").style.backgroundImage = 'url(' +prod.foodworld.productimg1 + ")"
+document.getElementById("feauturedlogo1").src= prod.foodworld.logo
+document.getElementById("feauturedname1").innerHTML= prod.foodworld.name
+document.getElementById("feauturedimage2").style.backgroundImage = 'url(' +prod.pizzahub.productimg1 + ")"
+document.getElementById("feauturedlogo2").src= prod.pizzahub.logo
+document.getElementById("feauturedname2").innerHTML= prod.pizzahub.name
+document.getElementById("feauturedimage3").style.backgroundImage = 'url(' +prod.donutshut.productimg1 + ")"
+document.getElementById("feauturedlogo3").src= prod.donutshut.logo
+document.getElementById("feauturedname3").innerHTML= prod.donutshut.name
+document.getElementById("feauturedimage4").style.backgroundImage = 'url(' +prod.subway.productimg1 + ")"
+document.getElementById("feauturedlogo4").src= prod.subway.logo
+document.getElementById("feauturedname4").innerHTML= prod.subway.name
+document.getElementById("feauturedimage5").style.backgroundImage = 'url(' +prod.rubytuesday.productimg1 + ")"
+document.getElementById("feauturedlogo5").src= prod.rubytuesday.logo
+document.getElementById("feauturedname5").innerHTML= prod.rubytuesday.name
+document.getElementById("feauturedimage6").style.backgroundImage = 'url(' +prod.kfc.productimg1 + ")"
+document.getElementById("feauturedlogo6").src= prod.kfc.logo
+document.getElementById("feauturedname6").innerHTML= prod.kfc.name
+document.getElementById("feauturedimage7").style.backgroundImage = 'url(' +prod.redsquare.productimg1 + ")"
+document.getElementById("feauturedlogo7").src= prod.redsquare.logo
+document.getElementById("feauturedname7").innerHTML= prod.redsquare.name
+document.getElementById("feauturedimage8").style.backgroundImage = 'url(' +prod.tacobell.productimg1 + ")"
+document.getElementById("feauturedlogo8").src= prod.tacobell.logo
+document.getElementById("feauturedname8").innerHTML= prod.tacobell.name
 
+obj2 =[
+    {
+        img:"images/pizza.png",
+        text:"Pizza"
+    },
+    {
+        img:"images/burger.png",
+        text:"Burger"
+    },
+    {
+        img:"images/noodles.png",
+        text:"Noodles"
+    },
+    {
+        img:"images/sandwich.png",
+        text:"Sub-sandwich"
+    },
+    {
+        img:"images/chowmain.png",
+        text:"Chowmain"
+    },
+    {
+        img:"images/steak.png",
+        text:"Steak"
+    },
+    {
+        img:"images/steak.png",
+        text:"Steak"
+    },
+    {
+        img:"images/chowmain.png",
+        text:"Chowmain"
+    },
+    {
+        img:"images/sandwich.png",
+        text:"Sub-sandwich"
+    },
+    {
+        img:"images/noodles.png",
+        text:"Noodles"
+    },
+    {
+        img:"images/burger.png",
+        text:"Burger"
+    },
+    {
+        img:"images/pizza.png",
+        text:"Pizza"
+    },
+
+
+]
+
+
+caruselData1=1  
+showData1(caruselData1)
+function showData1(number) {
+    let newindex=0
+    let index1=0
+   for (let index = 0; index < 6; index++) {
+    index1=index+1
+    
+    newindex=6*(number-1)+index
+    
+    document.getElementById("carusel2image"+index1).src=obj2[newindex].img
+    document.getElementById("carusel2text"+index1).innerHTML=obj2[newindex].text
+
+    
+   }
+
+    
+}  
+document.getElementById("carusel2arrow1").disabled = true
+
+function leftscrol1()
+{
+    if(caruselData1>1 ){
+        caruselData1=caruselData1-1
+        showData1(caruselData)
+        document.getElementById("carusel2arrow2").disabled = false
+    }
+    else{
+        document.getElementById("carusel2arrow1").disabled = true
+        document.getElementById("carusel2arrow2").disabled = false
+    }
+}
+
+
+function rightscrol1(){
+    if(caruselData1<obj1.length/6){
+        caruselData=caruselData+1
+        
+        showData1(caruselData1)
+        document.getElementById("carusel2arrow1").disabled = false
+    }
+    else{
+        document.getElementById("carusel2arrow2").disabled = true
+        document.getElementById("carusel2arrow1").disabled = false
+    }
+}
