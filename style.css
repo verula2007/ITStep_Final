@@ -721,6 +721,10 @@ color: #212121;
     color: #F17228;
     background-color: white;
 }
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
 @media only screen and (max-width: 1500px) {
     #flexDiv{
         display: none;

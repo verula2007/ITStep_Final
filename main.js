@@ -327,3 +327,16 @@ function rightscrol1(){
         document.getElementById("carusel2arrow1").disabled = false
     }
 }
+$('#button1').bind("enterKey",function(e){
+    localStorage.removeItem("index")
+    localStorage.setItem("index",0)
+    localStorage.setItem("search",document.getElementById("button1").value)
+    location.href="search.html"
+ });
+ $('#button1').keyup(function(e){
+     if(e.keyCode == 13)
+     {
+         $(this).trigger("enterKey");
+     }
+ });
+ 
