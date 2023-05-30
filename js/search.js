@@ -45,11 +45,94 @@ $(document).ready(function(){
         allfunc()
     }
 })
+let searchInput = ""
+let check = localStorage.getItem("search")
+
+$(document).ready(function(){
+    if(typeof check !== 'undefined' && check !== null){
+        document.getElementById("viewallbutton").style.color="red"
+        document.getElementById("viewallbutton").style.borderColor="red"
+        document.getElementById("viewallbutton").style.background="white"
+        document.getElementById("search").style.borderColor="greenyellow"
+        localStorage.removeItem("index")
+        localStorage.setItem("index",0)
+        document.getElementById("all").style.display = "none"
+        document.getElementById("cartdiv").style.display = "none"
+        document.getElementById("searched").style.display = "grid"
+        document.getElementById("viewallbutton").disabled = false
+        document.getElementById("icon").style.color = "white"
+        searchInput = check.toLowerCase()
+        document.getElementById("search").value=check
+        
+    document.getElementById("button1").value =""
+    let newarr = document.getElementById("searched").children
+    for (let i = 0; i < newarr.length; i++) {
+            let element1 = newarr[i];
+            element1.style.display = "none"
+            
+        }
+    for (var i = 0; i < a.length; i++) {
+        var item = a[i].name.toLowerCase();
+        
+        
+        
+        
+        
+        
+        if (item.includes(searchInput)) {
+          let divs = document.getElementById("searched").children
+          divs[a[i].id].style.display ="flex"
+          
+          
+        }
+      
+      
+    
+    }
+
+    
+    localStorage.removeItem("search")
+
+    }
+})
 $('#button1').bind("enterKey",function(e){
-    localStorage.removeItem("index")
-    localStorage.setItem("index",0)
-    localStorage.setItem("search",document.getElementById("button1").value)
-    location.href="search.html"
+    
+   
+    
+    
+       
+       
+    
+        searchInput = document.getElementById("button1").value.toLowerCase()
+        document.getElementById("search").value = document.getElementById("button1").value
+    document.getElementById("button1").value =""
+    let newarr = document.getElementById("searched").children
+    for (let i = 0; i < newarr.length; i++) {
+            let element1 = newarr[i];
+            element1.style.display = "none"
+            
+        }
+    for (var i = 0; i < a.length; i++) {
+        var item = a[i].name.toLowerCase();
+        
+        
+        
+        
+        
+        
+        if (item.includes(searchInput)) {
+          let divs = document.getElementById("searched").children
+          divs[a[i].id].style.display ="flex"
+          
+          
+        }
+      
+      
+    
+    }
+
+    
+    localStorage.removeItem("search")
  });
  $('#button1').keyup(function(e){
      if(e.keyCode == 13)
@@ -101,23 +184,25 @@ function searchfunc(){
     document.getElementById("searched").style.display = "grid"
     document.getElementById("viewallbutton").disabled = false
     document.getElementById("icon").style.color = "white"
-    for (const key in prod) {
-        let prodloop = prod[key]
-        
-        
-        $("#searched").append(`
-        <div class="alldivs">
-            <img style="width: 100%; border-radius: 20px; height:65%;" src="`+prodloop.productimg1+`" alt="">
-            <p class="prodname" style="font-size: 250%; color: #F65900;">`+ prodloop.productname1+`</p>
-            <p id="price" style="font-size: 150%; font-weight: bolder;">`+prodloop.productprice1+`</p>
-            <p id="Restaurant" style="font-size: 200%; color: #ffb30e;"">`+prodloop.name+`</p>
-            <button style="width: 80%;font-size: 20px; border: none; border-radius: 20px; background-color: #F65900; color: white; padding-top: 10px; padding-bottom: 10px;"  onclick="cartfunc(`+number+`)">Add to cart</button>
-        </div>
-        `)
+    
         
         
         
         };
+    for (const key in prod) {
+            let prodloop = prod[key]
+            
+            
+            $("#searched").append(`
+            <div class="alldivs">
+                <img style="width: 100%; border-radius: 20px; height:65%;" src="`+prodloop.productimg1+`" alt="">
+                <p class="prodname" style="font-size: 250%; color: #F65900;">`+ prodloop.productname1+`</p>
+                <p id="price" style="font-size: 150%; font-weight: bolder;">`+prodloop.productprice1+`</p>
+                <p id="Restaurant" style="font-size: 200%; color: #ffb30e;"">`+prodloop.name+`</p>
+                <button style="width: 80%;font-size: 20px; border: none; border-radius: 20px; background-color: #F65900; color: white; padding-top: 10px; padding-bottom: 10px;"  onclick="cartfunc(`+number+`)">Add to cart</button>
+            </div>
+            `)
+        
    
 }
 let counter=0
@@ -190,3 +275,38 @@ function cartfunction2(){
     document.getElementById("searched").style.display = "none"
     document.getElementById("icon").style.color = "greenyellow"
 }
+$('#search').bind("enterKey",function(e){
+    
+    
+    let searchInput = document.getElementById("search").value.toLowerCase()
+    let newarr = document.getElementById("searched").children
+    for (let i = 0; i < newarr.length; i++) {
+            let element1 = newarr[i];
+            element1.style.display = "none"
+            
+        }
+    for (var i = 0; i < a.length; i++) {
+        var item = a[i].name.toLowerCase();
+        // console.log(item)
+        
+        
+        
+        
+        
+        if (item.includes(searchInput)) {
+          let divs = document.getElementById("searched").children
+          divs[a[i].id].style.display ="flex"
+          
+          
+        }
+      }
+    
+
+    
+ });
+ $('#search').keyup(function(e){
+     if(e.keyCode == 13)
+     {
+         $(this).trigger("enterKey");
+     }
+ });

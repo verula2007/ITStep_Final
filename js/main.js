@@ -330,9 +330,14 @@ function rightscrol1(){
 $('#button1').bind("enterKey",function(e){
     localStorage.removeItem("index")
     localStorage.setItem("index",0)
-    localStorage.setItem("search",document.getElementById("button1").value)
+    let ragac = document.getElementById("button1").value
+    localStorage.setItem("search",ragac)
     location.href="search.html"
+    
  });
+ 
+ 
+ 
  $('#button1').keyup(function(e){
      if(e.keyCode == 13)
      {

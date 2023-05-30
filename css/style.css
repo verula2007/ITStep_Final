@@ -185,6 +185,7 @@ font-weight: 700;
 font-size: 80px;
 margin-bottom: 20px;
 color: white;
+margin-top: 0px;
 }
 #text2{
 font-family: 'Source Sans Pro';
@@ -781,7 +782,7 @@ a{
         justify-content: center;
     }
     #text1{
-        margin-top: 100px;
+        margin-top: 150px;
         font-size: 70px;
     }
     #deldiv{
@@ -849,7 +850,7 @@ a{
     }
     #text1{
         font-size: 40px;
-        margin-top: 150px;
+        margin-top: 200px;
         
     }
     #text2{
