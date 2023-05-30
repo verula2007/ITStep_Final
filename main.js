@@ -339,4 +339,10 @@ $('#button1').bind("enterKey",function(e){
          $(this).trigger("enterKey");
      }
  });
+ function viewall(){
+    location.href="search.html"
+    localStorage.removeItem("index")
+    localStorage.setItem("index",1)
+
+ }
  
